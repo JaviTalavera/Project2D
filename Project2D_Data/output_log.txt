@@ -1,0 +1,38 @@
+Initialize engine version: 5.3.1f1 (cc9cbbcc37b4)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960 (ID=0x1401)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.046 seconds
+Platform assembly: C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Javier\Documents\Unity Projects\Project2D\Project2D_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.700043 ms
+Gravity: -25  Jump Velocity: 9.999999
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.323025 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 265.
+Total: 0.211936 ms (FindLiveObjects: 0.008998 ms CreateObjectMapping: 0.013343 ms MarkObjects: 0.185561 ms  DeleteObjects: 0.003413 ms)
+
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 1c6d0 -> priority: 1 
+  Thread -> id: 1bcc4 -> priority: 1 
+  Thread -> id: 1c4f8 -> priority: 1 

@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: c04ce9a84d5965946bf259ca49cc1d65
+timeCreated: 1463082299
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cabeza
+    21300002: Hombro
+    21300004: Cuerpo
+    21300006: BrazoIzq
+    21300008: BrazoDer
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Cabeza
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 324
+        width: 240
+        height: 192
+      alignment: 9
+      pivot: {x: 0.23123284, y: 0.42272934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 157.50412, y: 85.83597}
+        - {x: 108.50412, y: 110.83597}
+        - {x: 12.50412, y: 110.83597}
+        - {x: -55.49588, y: 32.835968}
+        - {x: -55.49588, y: -49.164032}
+        - {x: -20.49588, y: -75.16403}
+        - {x: -6.49588, y: -81.16403}
+        - {x: 150.50412, y: -81.16403}
+        - {x: 184.50412, y: -66.16403}
+        - {x: 184.50412, y: 21.835968}
+        - {x: 179.50412, y: 24.835968}
+    - name: Hombro
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 289
+        width: 60
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7902682, y: 0.52150065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Cuerpo
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 187
+        width: 107
+        height: 127
+      alignment: 9
+      pivot: {x: 0.4939715, y: 0.6218973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.14505, y: 46.019043}
+        - {x: 8.14505, y: 48.019043}
+        - {x: -32.85495, y: 48.019043}
+        - {x: -40.85495, y: 44.019043}
+        - {x: -40.85495, y: 39.019043}
+        - {x: -31.85495, y: 34.019043}
+        - {x: -52.85495, y: 24.019043}
+        - {x: -52.85495, y: -33.980957}
+        - {x: -45.85495, y: -78.98096}
+        - {x: -35.85495, y: -78.98096}
+        - {x: 31.14505, y: -35.980957}
+        - {x: 54.14505, y: 0.019042969}
+        - {x: 54.14505, y: 20.019043}
+    - name: BrazoIzq
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 242
+        width: 92
+        height: 35
+      alignment: 9
+      pivot: {x: 0.12138897, y: 0.53685915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.832214, y: 16.20993}
+        - {x: -11.167786, y: 3.2099304}
+        - {x: -11.167786, y: -17.79007}
+        - {x: -2.1677856, y: -18.79007}
+        - {x: 80.832214, y: -18.79007}
+        - {x: 80.832214, y: 4.2099304}
+        - {x: 47.832214, y: 16.20993}
+    - name: BrazoDer
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 179
+        width: 122
+        height: 46
+      alignment: 9
+      pivot: {x: 0.89125437, y: 0.31770423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.733032, y: 31.385605}
+        - {x: -69.73303, y: 31.385605}
+        - {x: -108.73303, y: 17.385605}
+        - {x: -108.73303, y: 4.385605}
+        - {x: -72.73303, y: -14.614395}
+        - {x: -16.733032, y: -14.614395}
+        - {x: 13.266968, y: -9.614395}
+        - {x: 13.266968, y: 3.3856049}
+        - {x: -31.733032, y: 27.385605}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
