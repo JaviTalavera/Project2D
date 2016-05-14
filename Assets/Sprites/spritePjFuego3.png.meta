@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 17f4b70436ed43d4a8522f466754ad51
+timeCreated: 1463221135
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cabeza
+    21300002: Cuello
+    21300004: Cuerpo
+    21300006: BrazoDer
+    21300008: BrazoIzq
+    21300010: Cola
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Cabeza
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 297
+        width: 209
+        height: 184
+      alignment: 9
+      pivot: {x: 0.53039944, y: 0.08948019}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.146515, y: 167.53564}
+        - {x: -72.853485, y: 167.53564}
+        - {x: -72.853485, y: 165.53564}
+        - {x: -109.853485, y: 156.53564}
+        - {x: -110.853485, y: 156.53564}
+        - {x: -110.853485, y: 33.535645}
+        - {x: -41.853485, y: -14.464355}
+        - {x: -33.853485, y: -16.464355}
+        - {x: 32.146515, y: -16.464355}
+        - {x: 53.146515, y: -10.464355}
+        - {x: 98.146515, y: 23.535645}
+        - {x: 98.146515, y: 134.53564}
+    - name: Cuello
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 438
+        width: 99
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49.5, y: 21}
+        - {x: -49.5, y: 3}
+        - {x: -6.5, y: -21}
+        - {x: 25.5, y: -21}
+        - {x: 34.5, y: -18}
+        - {x: 49.5, y: -6}
+        - {x: 49.5, y: 21}
+    - name: Cuerpo
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 342
+        width: 116
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47, y: 44}
+        - {x: -57, y: 44}
+        - {x: -58, y: 43}
+        - {x: -58, y: -32}
+        - {x: -36, y: -44}
+        - {x: 37, y: -44}
+        - {x: 57, y: -23}
+        - {x: 58, y: -20}
+        - {x: 58, y: 31}
+    - name: BrazoDer
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 203
+        width: 86
+        height: 85
+      alignment: 9
+      pivot: {x: 0.8940135, y: 0.757461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.8851624, y: 20.615814}
+        - {x: -76.88516, y: 20.615814}
+        - {x: -76.88516, y: -63.384186}
+        - {x: -75.88516, y: -64.384186}
+        - {x: -25.885162, y: -64.384186}
+        - {x: 9.114838, y: -13.384186}
+        - {x: 9.114838, y: 10.615814}
+        - {x: 0.11483765, y: 12.615814}
+    - name: BrazoIzq
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 220
+        width: 63
+        height: 66
+      alignment: 9
+      pivot: {x: 0.14142694, y: 0.72461814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.09010315, y: 18.175201}
+        - {x: -8.909897, y: 16.175201}
+        - {x: -8.909897, y: -10.824799}
+        - {x: 15.090103, y: -47.8248}
+        - {x: 54.090103, y: -47.8248}
+        - {x: 54.090103, y: 9.175201}
+        - {x: 45.090103, y: 18.175201}
+    - name: Cola
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 253
+        width: 129
+        height: 52
+      alignment: 9
+      pivot: {x: 0.6586997, y: 0.8393948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.97226, y: 8.351471}
+        - {x: -84.97226, y: -18.64853}
+        - {x: -84.97226, y: -43.64853}
+        - {x: 5.0277405, y: -43.64853}
+        - {x: 44.02774, y: -27.64853}
+        - {x: 44.02774, y: 8.351471}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
