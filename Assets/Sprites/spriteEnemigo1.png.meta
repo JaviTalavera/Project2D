@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: 23290d67a11386947bb5cbb9c5cf98ce
+timeCreated: 1463236384
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AlaDer1
+    21300002: AlaDer2
+    21300004: Boca
+    21300006: Cuerpo
+    21300008: Ojo
+    21300010: AlaIzq2
+    21300012: AlaIzq1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AlaDer1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 267
+        width: 89
+        height: 98
+      alignment: 9
+      pivot: {x: 0.8747832, y: 0.87871534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.144295, y: 11.885895}
+        - {x: -18.855705, y: 11.885895}
+        - {x: -48.855705, y: -13.114105}
+        - {x: -77.855705, y: -39.114105}
+        - {x: -77.855705, y: -50.114105}
+        - {x: -17.855705, y: -86.114105}
+        - {x: -8.855705, y: -86.114105}
+        - {x: 9.144295, y: -34.114105}
+        - {x: 11.144295, y: -24.114105}
+        - {x: 11.144295, y: 10.885895}
+    - name: AlaDer2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 295
+        width: 57
+        height: 70
+      alignment: 9
+      pivot: {x: 0.89562, y: 0.15771833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.050339, y: 56.959717}
+        - {x: -24.050339, y: 58.959717}
+        - {x: -46.05034, y: 58.959717}
+        - {x: -51.05034, y: 26.959717}
+        - {x: -51.05034, y: -11.040283}
+        - {x: 5.9496613, y: -11.040283}
+        - {x: 5.9496613, y: 27.959717}
+        - {x: 3.9496613, y: 38.959717}
+    - name: Boca
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 281
+        width: 29
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.144295, y: 11.885895}
+        - {x: -18.855705, y: 11.885895}
+        - {x: -48.855705, y: -13.114105}
+        - {x: -77.855705, y: -39.114105}
+        - {x: -77.855705, y: -50.114105}
+        - {x: -17.855705, y: -86.114105}
+        - {x: -8.855705, y: -86.114105}
+        - {x: 9.144295, y: -34.114105}
+        - {x: 11.144295, y: -24.114105}
+        - {x: 11.144295, y: 10.885895}
+        - {x: 10.144295, y: 11.885895}
+        - {x: -18.855705, y: 11.885895}
+        - {x: -48.855705, y: -13.114105}
+        - {x: -77.855705, y: -39.114105}
+        - {x: -77.855705, y: -50.114105}
+        - {x: -17.855705, y: -86.114105}
+        - {x: -8.855705, y: -86.114105}
+        - {x: 9.144295, y: -34.114105}
+        - {x: 11.144295, y: -24.114105}
+        - {x: 11.144295, y: 10.885895}
+        - {x: 10.144295, y: 11.885895}
+        - {x: -18.855705, y: 11.885895}
+        - {x: -48.855705, y: -13.114105}
+        - {x: -77.855705, y: -39.114105}
+        - {x: -77.855705, y: -50.114105}
+        - {x: -17.855705, y: -86.114105}
+        - {x: -8.855705, y: -86.114105}
+        - {x: 9.144295, y: -34.114105}
+        - {x: 11.144295, y: -24.114105}
+        - {x: 11.144295, y: 10.885895}
+      - - {x: 10.144295, y: 11.885895}
+        - {x: -18.855705, y: 11.885895}
+        - {x: -48.855705, y: -13.114105}
+        - {x: -77.855705, y: -39.114105}
+        - {x: -77.855705, y: -50.114105}
+        - {x: -17.855705, y: -86.114105}
+        - {x: -8.855705, y: -86.114105}
+        - {x: 9.144295, y: -34.114105}
+        - {x: 11.144295, y: -24.114105}
+        - {x: 11.144295, y: 10.885895}
+        - {x: 10.144295, y: 11.885895}
+        - {x: -18.855705, y: 11.885895}
+        - {x: -48.855705, y: -13.114105}
+        - {x: -77.855705, y: -39.114105}
+        - {x: -77.855705, y: -50.114105}
+        - {x: -17.855705, y: -86.114105}
+        - {x: -8.855705, y: -86.114105}
+        - {x: 9.144295, y: -34.114105}
+        - {x: 11.144295, y: -24.114105}
+        - {x: 11.144295, y: 10.885895}
+      - - {x: 10.144295, y: 11.885895}
+        - {x: -18.855705, y: 11.885895}
+        - {x: -48.855705, y: -13.114105}
+        - {x: -77.855705, y: -39.114105}
+        - {x: -77.855705, y: -50.114105}
+        - {x: -17.855705, y: -86.114105}
+        - {x: -8.855705, y: -86.114105}
+        - {x: 9.144295, y: -34.114105}
+        - {x: 11.144295, y: -24.114105}
+        - {x: 11.144295, y: 10.885895}
+    - name: Cuerpo
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 144
+        width: 153
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -62.5, y: 60}
+        - {x: -76.5, y: 36}
+        - {x: -76.5, y: -49}
+        - {x: -67.5, y: -60}
+        - {x: 46.5, y: -60}
+        - {x: 76.5, y: -49}
+        - {x: 76.5, y: 52}
+        - {x: 57.5, y: 60}
+    - name: Ojo
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 226
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 21}
+        - {x: -12, y: 21}
+        - {x: -21, y: 11}
+        - {x: -21, y: -19}
+        - {x: -15, y: -21}
+        - {x: 16, y: -21}
+        - {x: 21, y: -15}
+        - {x: 21, y: 13}
+    - name: AlaIzq2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 38
+        width: 97
+        height: 95
+      alignment: 9
+      pivot: {x: 0.044731338, y: 0.24284692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.3389397, y: 21.929543}
+        - {x: -4.3389397, y: -11.070457}
+        - {x: -3.3389397, y: -17.070457}
+        - {x: 35.66106, y: -23.070457}
+        - {x: 92.66106, y: -23.070457}
+        - {x: 92.66106, y: 71.92954}
+        - {x: 61.66106, y: 71.92954}
+        - {x: 22.66106, y: 61.929543}
+    - name: AlaIzq1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 142
+        height: 135
+      alignment: 9
+      pivot: {x: 0.079827964, y: 0.89323884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 89.66443, y: -31.587242}
+        - {x: 37.66443, y: 14.412758}
+        - {x: -8.335571, y: 14.412758}
+        - {x: -11.335571, y: 13.412758}
+        - {x: -11.335571, y: -55.587242}
+        - {x: -4.3355713, y: -104.58724}
+        - {x: 1.6644287, y: -120.58724}
+        - {x: 15.664429, y: -120.58724}
+        - {x: 130.66443, y: -86.58724}
+        - {x: 130.66443, y: -73.58724}
+        - {x: 108.66443, y: -49.587242}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
