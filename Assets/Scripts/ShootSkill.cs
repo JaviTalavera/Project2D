@@ -17,11 +17,5 @@ public class ShootSkill : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter(Collider collider) {
-		Debug.Log (collider.gameObject.layer);
-	}
 
-	void OnCollisionEnter(Collision collision) {
-		Debug.Log (collision.gameObject.layer);
-	}
 }
