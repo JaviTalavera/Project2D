@@ -9,7 +9,7 @@ public class IsGrounded : MonoBehaviour {
 		return bGrounded;
 	}
 
-	public void OnTriggerEnter2D(Collider2D collider) {
+	public void OnTriggerStay2D(Collider2D collider) {
 		if (collider.gameObject.layer == 8)
 			bGrounded = true;
 	}
