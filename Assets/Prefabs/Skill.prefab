@@ -27,9 +27,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 440584}
   - 114: {fileID: 11408072}
-  - 50: {fileID: 5056552}
   - 58: {fileID: 5845318}
-  m_Layer: 0
+  - 114: {fileID: 11437366}
+  m_Layer: 9
   m_Name: Skill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,23 +94,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120270}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!50 &5056552
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137368}
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &5845318
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -150,6 +133,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4328f6c743f5c2b4488fe27e65ec2e67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 4
+--- !u!114 &11437366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab68a77b99a0445f931c8265bd48dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDie: 4
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

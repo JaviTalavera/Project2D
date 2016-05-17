@@ -3,14 +3,16 @@ using System.Collections;
 
 public class SkillHandle : MonoBehaviour {
 
+	public float speed;
+
 	// Use this for initialization
 	void Start () {
-		GetComponent<Rigidbody2D> ().AddForce(5*Vector2.right);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		transform.Translate (Vector2.right * speed * Time.deltaTime);	
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
