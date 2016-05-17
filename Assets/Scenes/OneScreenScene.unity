@@ -139,10 +139,30 @@ Prefab:
     - target: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
       propertyPath: m_Target
       value: 
-      objectReference: {fileID: 400813037}
+      objectReference: {fileID: 541052187}
     - target: {fileID: 100004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
       propertyPath: m_Name
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_SmoothTurnTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_TargetVelocityLowerLimit
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_FollowVelocity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_AutoTargetPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
+      propertyPath: m_TurnSpeed
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
@@ -275,10 +295,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a68c82312a21b54280f3587385d2116, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &400813037 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 448046, guid: 6c4a90c593e44de4897a2cdc8d93b8de, type: 2}
-  m_PrefabInternal: {fileID: 407574779}
 --- !u!1001 &407574779
 Prefab:
   m_ObjectHideFlags: 0
@@ -535,6 +551,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a4527cd629834b41bd00ccdd70553c1, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &541052187 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 488582, guid: f2bee60c743cd524695611cf26642f62, type: 2}
+  m_PrefabInternal: {fileID: 436220958}
 --- !u!1 &655927108 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 113572, guid: f2bee60c743cd524695611cf26642f62, type: 2}
@@ -600,6 +620,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 6129448, guid: 3b3475dae1ffd7642ba1fae58adf2066, type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 230342b150856b04b91da74b949ce5ac, type: 2}
+    - target: {fileID: 6153104, guid: 3b3475dae1ffd7642ba1fae58adf2066, type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 230342b150856b04b91da74b949ce5ac, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b3475dae1ffd7642ba1fae58adf2066, type: 2}
   m_IsPrefabParent: 0
