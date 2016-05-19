@@ -23,7 +23,6 @@ public class EnemyBatMovement : MonoBehaviour
     private Transform Enemigo;
     private float DistanceHRecorrida = 0.0F;
     private float PingPongHPosition;
-    private Vector3 PosicionInicialEnemigo;
 
 
     void Start()
@@ -31,7 +30,7 @@ public class EnemyBatMovement : MonoBehaviour
         Enemigo = transform;
 
         // Guardamos la posición inicial del enemigo
-        PosicionInicialEnemigo = Enemigo.position;
+        //PosicionInicialEnemigo = Enemigo.position;
 
         // Inicializamos la posición de referencia para el cálculo de rebote horizontal (ping-pong)
         PingPongHPosition = Enemigo.position.x;
@@ -73,7 +72,7 @@ public class EnemyBatMovement : MonoBehaviour
         }
 
 
-        // Movemos la plataforma
+        // Movemos el enemigo
         Enemigo.Translate(new Vector3(VelocidadH, 0, 0) * Time.deltaTime);
     }
 
