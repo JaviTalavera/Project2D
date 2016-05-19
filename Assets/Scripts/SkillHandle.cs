@@ -4,6 +4,7 @@ using System.Collections;
 public class SkillHandle : MonoBehaviour {
 
 	public float speed;
+	public GameObject ice;
 
 	// Use this for initialization
 	void Start () {
@@ -16,10 +17,12 @@ public class SkillHandle : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
-		//Debug.Log (collider.gameObject.layer);
+
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		//Debug.Log (collision.gameObject.layer);
+		if (collision.gameObject.layer == LayerMask.NameToLayer ("Water")) {
+			GameObject inst = Instantiate (ice, collision.contacts [0].point, Quaternion.identity) as GameObject;
+		}
 	}
 }
