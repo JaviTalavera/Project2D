@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  ice: {fileID: 132056, guid: 8b0779e9e7bb841f9ae9836ca8d31731, type: 2}
 --- !u!114 &11437366
 MonoBehaviour:
   m_ObjectHideFlags: 1
