@@ -13,7 +13,8 @@ GameObject:
   - 50: {fileID: 5022726}
   - 114: {fileID: 11469912}
   - 114: {fileID: 11443012}
-  m_Layer: 0
+  - 114: {fileID: 11487614}
+  m_Layer: 10
   m_Name: FrostPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,8 +29,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484030}
-  - 58: {fileID: 5840334}
   - 114: {fileID: 11495726}
+  - 61: {fileID: 6121608}
   m_Layer: 0
   m_Name: IsGrounded
   m_TagString: Untagged
@@ -101,6 +102,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &153822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422926}
+  m_Layer: 10
+  m_Name: Thrower
+  m_TagString: Untagged
+  m_Icon: {fileID: -2663371497217273435, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &184888
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +133,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &422926
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.467, y: 0.178, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488582}
+  m_RootOrder: 2
 --- !u!4 &459962
 Transform:
   m_ObjectHideFlags: 1
@@ -135,7 +163,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147198}
-  m_LocalRotation: {x: 0, y: 0, z: 0.5092808, w: 0.8606005}
+  m_LocalRotation: {x: 0, y: 0, z: 0.40126762, w: 0.9159609}
   m_LocalPosition: {x: -0.38399994, y: 0.20900002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -148,7 +176,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.19, z: 0}
+  m_LocalPosition: {x: 0, y: 0.199, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_Children:
   - {fileID: 491342}
@@ -175,7 +203,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127586}
-  m_LocalRotation: {x: 0, y: 0, z: -0.50585717, w: 0.8626173}
+  m_LocalRotation: {x: 0, y: 0, z: -0.35195032, w: 0.9360187}
   m_LocalPosition: {x: 0.42299998, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -188,11 +216,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.46, y: -0.52, z: 0}
+  m_LocalPosition: {x: -13.48, y: 2.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479592}
   - {fileID: 484030}
+  - {fileID: 422926}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &491342
@@ -223,9 +252,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!58 &5840334
-CircleCollider2D:
+  m_Constraints: 5
+--- !u!61 &6121608
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -235,9 +264,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.004044533, y: -0.000000074505806}
   serializedVersion: 2
-  m_Radius: 0.03
+  m_Size: {x: 0.69428277, y: 0.061334256}
 --- !u!61 &6133150
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -264,7 +293,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: c9a3bec77732f06409f8dc52c9083804, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -293,6 +322,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skill: {fileID: 137368, guid: 73eeb2e1e6503c348ba17bb94d3cb7c5, type: 2}
+  maxSkillCd: 0
+  thrower: {fileID: 422926}
+--- !u!114 &11487614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c7071407abf04490257c39e46c22d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limit: -5
 --- !u!114 &11495726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -328,7 +371,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1241033795
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c04ce9a84d5965946bf259ca49cc1d65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -358,7 +401,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1241033795
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300006, guid: c04ce9a84d5965946bf259ca49cc1d65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -388,7 +431,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1241033795
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300008, guid: c04ce9a84d5965946bf259ca49cc1d65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -418,7 +461,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1241033795
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: c04ce9a84d5965946bf259ca49cc1d65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -448,7 +491,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1241033795
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300002, guid: c04ce9a84d5965946bf259ca49cc1d65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

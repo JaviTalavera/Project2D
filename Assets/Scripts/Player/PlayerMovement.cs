@@ -43,4 +43,10 @@ public class PlayerMovement : MonoBehaviour {
 		Vector3 vFlip = new Vector3 (-1*transform.localScale.x, transform.localScale.y, transform.localScale.z);
 		transform.localScale = vFlip;
 	}
+
+	void OnCollisionEnter2D(Collision2D collision) {
+		if (collision.gameObject.layer == LayerMask.NameToLayer ("Water")) { 
+			GetComponent<Collider2D> ().enabled = false;
+		}
+	}
 }

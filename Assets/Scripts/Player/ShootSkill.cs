@@ -5,6 +5,7 @@ public class ShootSkill : MonoBehaviour {
 
 	public GameObject skill;
 	public float maxSkillCd;
+	public Transform thrower;
 
 	private float skillCd;
 
@@ -16,7 +17,7 @@ public class ShootSkill : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Z) && skillCd < 0) {
-			GameObject go = Instantiate (skill, transform.position, skill.transform.rotation) as GameObject;
+			GameObject go = Instantiate (skill, thrower.position, skill.transform.rotation) as GameObject;
 			go.GetComponent<SkillHandle> ().speed *= transform.localScale.x; 
 			skillCd = maxSkillCd;
 		}

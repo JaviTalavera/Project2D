@@ -9,7 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 408766}
   - 61: {fileID: 6130090}
-  m_Layer: 0
+  - 114: {fileID: 11433494}
+  m_Layer: 8
   m_Name: pfHielo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,6 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 497170}
   - 212: {fileID: 21269130}
+  - 95: {fileID: 9588794}
   m_Layer: 0
   m_Name: hielo
   m_TagString: Untagged
@@ -39,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -11.960684, y: 0.60532236, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 497170}
@@ -53,7 +55,7 @@ Transform:
   m_GameObject: {fileID: 140164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 408766}
   m_RootOrder: 0
@@ -68,9 +70,38 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.009098649, y: -0.095535755}
+  m_Offset: {x: 0.009098679, y: -0.004519105}
   serializedVersion: 2
-  m_Size: {x: 0.63605464, y: 0.8089285}
+  m_Size: {x: 0.43519038, y: 0.6268952}
+--- !u!95 &9588794
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140164}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6e429f6df03d584fbd8dcbcee1eb938, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11433494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab68a77b99a0445f931c8265bd48dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDie: 5
 --- !u!212 &21269130
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -96,7 +127,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5b8d0992b47b74de691b3c54d6dd55cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -107,7 +138,23 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: timeToDie
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132056}
