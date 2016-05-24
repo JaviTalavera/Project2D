@@ -9,13 +9,12 @@ public class IsGrounded : MonoBehaviour {
 		return bGrounded;
 	}
 
+	public void LateUpdate () {
+		bGrounded = false;
+	}
+
 	public void OnTriggerStay2D(Collider2D collider) {
 		if (collider.gameObject.layer == 8)
 			bGrounded = true;
-	}
-
-	public void OnTriggerExit2D(Collider2D collider) {
-		if (collider.gameObject.layer == 8)
-			bGrounded = false;
 	}
 }
