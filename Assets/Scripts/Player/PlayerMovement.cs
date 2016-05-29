@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour {
 	private Rigidbody2D rb;
 	private IsGrounded ig;
 	private ShootSkill ss;
+	private Animator anim;
+	private Transform sprite;
 
 	public NPlayer player;
 	private DireccionH direccion;
@@ -27,9 +29,11 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		direccion = DireccionH.Derecha;
-		ig = transform.Find ("IsGrounded").GetComponent<IsGrounded> ();
+		ig = transform.FindChild ("Cuerpo/IsGrounded").GetComponent<IsGrounded> ();
 		rb = GetComponent<Rigidbody2D> ();
 		ss = GetComponent<ShootSkill> ();
+		anim = GetComponent<Animator> ();
+		sprite = transform.FindChild ("Cuerpo") as Transform;
 		actualHp = MaxHp;
 		if (player == NPlayer.Player1) {
 			GameObject inst = Instantiate (pmPlayer1, transform.position, Quaternion.identity) as GameObject;
@@ -75,8 +79,8 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void Flip () {
-		Vector3 vFlip = new Vector3 (-1*transform.localScale.x, transform.localScale.y, transform.localScale.z);
-		transform.localScale = vFlip;
+		Vector3 vFlip = new Vector3 (-1*sprite.localScale.x, sprite.localScale.y, sprite.localScale.z);
+		sprite.localScale = vFlip;
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
@@ -91,6 +95,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void doDamage (float dmg) {
 		actualHp -= dmg;
+		anim.SetTrigger ("damaged");
 		if (actualHp < 0)
 			actualHp = 0;
 	}

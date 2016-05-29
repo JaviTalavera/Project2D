@@ -25,12 +25,8 @@ public class EnemyDamage : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        Debug.Log("Hay Contacto");
-
         if (other.gameObject.tag.Contains("Player")) // TO DO
             other.gameObject.GetComponent<PlayerMovement>().doDamage(dano);
-
-        Debug.Log(GetComponent<PlayerMovement>().doDamage(dano));
 
     }
 

@@ -18,10 +18,6 @@ public class SkillHandle : MonoBehaviour {
 		transform.Translate (Vector2.right * speed * Time.deltaTime);	
 	}
 
-	void OnTriggerEnter2D(Collider2D collider) {
-
-	}
-
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.gameObject.layer == LayerMask.NameToLayer ("Water")) {
 			GameObject inst = Instantiate (ice, collision.contacts [0].point, Quaternion.identity) as GameObject;
