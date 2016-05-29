@@ -1,22 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class EnemyDamage : MonoBehaviour {
-
-
-    void OnTriggerEnter (Collider other)
-    {
-        Debug.Log("Hay Contacto");
-
-    }
-
 
     private float dano;
     private float vida;
 
+    private PlayerMovement PlayerMovement;
+
+
     // Use this for initialization
     void Start () {
-        dano = 20;
+        dano = 20f;
         vida = 100;
     }
 	
@@ -25,23 +21,17 @@ public class EnemyDamage : MonoBehaviour {
 	
 	}
 
-    
-    void OnCollisionEnter(Collision colision)
-    {
-        if (colision.collider.tag == "FirePlayer")
-        {
-            Debug.Log(vida -= dano);
-            Debug.Log("Hay Contacto");
-
-        }
-        else {
-            Debug.Log("No hay contacto");
-        }
-    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         Debug.Log("Hay Contacto");
+
+        if (other.gameObject.tag.Contains("Player")) // TO DO
+            other.gameObject.GetComponent<PlayerMovement>().doDamage(dano);
+
+        Debug.Log(GetComponent<PlayerMovement>().doDamage(dano));
+
     }
 
 

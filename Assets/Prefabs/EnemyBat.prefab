@@ -108,6 +108,7 @@ GameObject:
   - 114: {fileID: 11499936}
   - 58: {fileID: 5899332}
   - 114: {fileID: 11456314}
+  - 114: {fileID: 11456210}
   m_Layer: 0
   m_Name: EnemyBat
   m_TagString: Untagged
@@ -294,6 +295,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11456210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f7e131ebd62cb4fb8d54cbc69de8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeed: 1
+  maxSpeed: 1
+  minInitialOrientation: 0
+  maxInitialOrientation: 0
+  trail: {fileID: 0}
+  frequency: 1
+  wavelength: 1
 --- !u!114 &11456314
 MonoBehaviour:
   m_ObjectHideFlags: 1
