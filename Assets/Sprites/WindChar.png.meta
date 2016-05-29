@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 44d0b30e56cafbe46b363968dd19d814
+timeCreated: 1464563826
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cabeza
+    21300002: BrazoDer
+    21300004: Cuerpo
+    21300006: Cola2
+    21300008: Cola1
+    21300010: BrazoIzq
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Cabeza
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 333
+        width: 184
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46047178, y: 0.16940108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -84.72681, y: -31.1698}
+        - {x: -80.72681, y: -31.1698}
+        - {x: -80.72681, y: -30.1698}
+        - {x: -83.72681, y: -27.1698}
+        - {x: -84.72681, y: -27.1698}
+      - - {x: -84.72681, y: 152.8302}
+        - {x: -84.72681, y: 82.8302}
+        - {x: -71.72681, y: 21.8302}
+        - {x: -24.726807, y: -31.1698}
+        - {x: 23.273193, y: -31.1698}
+        - {x: 75.27319, y: 1.8302002}
+        - {x: 99.27319, y: 94.8302}
+        - {x: 99.27319, y: 152.8302}
+      - - {x: 92.27319, y: 6.8302}
+        - {x: 86.27319, y: 1.8302002}
+        - {x: 86.27319, y: -13.1698}
+        - {x: 95.27319, y: -31.1698}
+        - {x: 99.27319, y: -31.1698}
+        - {x: 99.27319, y: 6.8302}
+    - name: BrazoDer
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 421
+        width: 82
+        height: 91
+      alignment: 9
+      pivot: {x: 0.92736, y: 0.9141574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.043518, y: 7.811676}
+        - {x: -76.04352, y: -23.188324}
+        - {x: -76.04352, y: -69.188324}
+        - {x: -69.04352, y: -83.188324}
+        - {x: -13.043518, y: -83.188324}
+        - {x: -10.043518, y: -82.188324}
+        - {x: 5.956482, y: -13.188324}
+        - {x: 5.956482, y: 7.811676}
+    - name: Cuerpo
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 229
+        width: 137
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.5, y: 54}
+        - {x: -68.5, y: 54}
+        - {x: -68.5, y: 30}
+        - {x: -53.5, y: -20}
+        - {x: 4.5, y: -54}
+        - {x: 50.5, y: -54}
+        - {x: 61.5, y: -43}
+        - {x: 68.5, y: -13}
+        - {x: 68.5, y: 27}
+      - - {x: 14.5, y: 54}
+        - {x: 14.5, y: 50}
+        - {x: 19.5, y: 48}
+        - {x: 25.5, y: 48}
+        - {x: 28.5, y: 53}
+        - {x: 28.5, y: 54}
+    - name: Cola2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 261
+        width: 112
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5059038, y: 0.6273871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56.661224, y: 40.614807}
+        - {x: -56.661224, y: -68.38519}
+        - {x: 15.338776, y: -68.38519}
+        - {x: 55.338776, y: -52.385193}
+        - {x: 55.338776, y: 8.614807}
+        - {x: 32.338776, y: 40.614807}
+    - name: Cola1
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 133
+        width: 108
+        height: 94
+      alignment: 9
+      pivot: {x: 0.49999985, y: 0.6617828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.000015, y: 31.79242}
+        - {x: -53.999985, y: 31.79242}
+        - {x: -53.999985, y: -22.20758}
+        - {x: -47.999985, y: -62.20758}
+        - {x: -4.9999847, y: -62.20758}
+        - {x: 34.000015, y: -45.20758}
+        - {x: 54.000015, y: -27.20758}
+        - {x: 54.000015, y: -9.207581}
+    - name: BrazoIzq
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 164
+        width: 60
+        height: 54
+      alignment: 9
+      pivot: {x: 0.114301555, y: 0.86733276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.8580933, y: 7.164032}
+        - {x: -6.8580933, y: -14.835968}
+        - {x: 16.141907, y: -46.835968}
+        - {x: 52.141907, y: -46.835968}
+        - {x: 53.141907, y: -45.835968}
+        - {x: 53.141907, y: -3.835968}
+        - {x: 40.141907, y: 7.164032}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
