@@ -27,7 +27,9 @@ public class SkillHandle : MonoBehaviour {
 
 	public IEnumerator InstantiateSprite () {
 		while (true) {
-			Instantiate (spike, transform.position, spike.transform.rotation);
+			GameObject inst = Instantiate (spike, transform.position, spike.transform.rotation) as GameObject;
+			Vector3 vFlip = new Vector3 (-1*Mathf.Sign (speed)*inst.transform.localScale.x, inst.transform.localScale.y, inst.transform.localScale.z);
+			inst.transform.localScale = vFlip;
 			yield return new WaitForSeconds (timeBetweenSpikes);
 		}
 	}

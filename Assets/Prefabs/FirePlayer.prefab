@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &104912
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -51,7 +51,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &136206
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -110,7 +110,7 @@ GameObject:
   - 114: {fileID: 11405542}
   - 114: {fileID: 11480790}
   - 114: {fileID: 11488042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FirePlayer
   m_TagString: Player2
   m_Icon: {fileID: 0}
@@ -156,11 +156,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.195, y: 0.19799995, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.403268, y: 0.19941847, z: 0}
+  m_LocalScale: {x: 2.215762, y: 2.215762, z: 2.215762}
   m_Children: []
-  m_Father: {fileID: 448046}
-  m_RootOrder: 2
+  m_Father: {fileID: 480308}
+  m_RootOrder: 6
 --- !u!4 &414356
 Transform:
   m_ObjectHideFlags: 1
@@ -208,8 +208,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 480308}
-  - {fileID: 457864}
-  - {fileID: 407624}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &457864
@@ -219,11 +217,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.226, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.028804906, y: -0.7400647, z: 0}
+  m_LocalScale: {x: 2.215762, y: 2.215762, z: 2.215762}
   m_Children: []
-  m_Father: {fileID: 448046}
-  m_RootOrder: 1
+  m_Father: {fileID: 480308}
+  m_RootOrder: 5
 --- !u!4 &468954
 Transform:
   m_ObjectHideFlags: 1
@@ -251,6 +249,8 @@ Transform:
   - {fileID: 414356}
   - {fileID: 426574}
   - {fileID: 441000}
+  - {fileID: 457864}
+  - {fileID: 407624}
   m_Father: {fileID: 448046}
   m_RootOrder: 0
 --- !u!4 &483648
@@ -281,7 +281,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!61 &6103920
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -319,7 +319,7 @@ Animator:
   m_GameObject: {fileID: 175404}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 917aa20b349eff74594d55a144e37ff5, type: 2}
+  m_Controller: {fileID: 22100000, guid: 1a20fd34ff6f5354797178b51a4b6ceb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
