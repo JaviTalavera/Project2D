@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11487614}
   m_Layer: 10
   m_Name: FrostPlayer
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,6 +31,7 @@ GameObject:
   - 4: {fileID: 484030}
   - 114: {fileID: 11495726}
   - 61: {fileID: 6121608}
+  - 61: {fileID: 6166488}
   m_Layer: 0
   m_Name: IsGrounded
   m_TagString: Untagged
@@ -140,7 +141,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.467, y: 0.178, z: 0}
+  m_LocalPosition: {x: 0.195, y: 0.178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 488582}
@@ -281,6 +282,20 @@ BoxCollider2D:
   m_Offset: {x: 0.017912447, y: 0.41252792}
   serializedVersion: 2
   m_Size: {x: 0.65619004, y: 1.2599483}
+--- !u!61 &6166488
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113572}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.004044533, y: -0.000000074505806}
+  serializedVersion: 2
+  m_Size: {x: 0.69428277, y: 0.061334256}
 --- !u!95 &9502302
 Animator:
   serializedVersion: 3
@@ -309,7 +324,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ac343563ceb9640be80d32ddeadd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxHp: 100
   VelocidadH: 3
+  player: 0
+  pmPlayer1: {fileID: 183548, guid: 29ef81e4dfcea764cbbbf3fb378e7f1a, type: 2}
+  pmPlayer2: {fileID: 184354, guid: 1ed17053bae6801409b70b553b1eaef2, type: 2}
 --- !u!114 &11469912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,8 +341,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skill: {fileID: 137368, guid: 73eeb2e1e6503c348ba17bb94d3cb7c5, type: 2}
-  maxSkillCd: 0
+  maxSkillCd: 3
   thrower: {fileID: 422926}
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &11487614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,6 +369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b255ca8a67aeb47a333c19b6f83793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!212 &21206642
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -15,8 +15,8 @@ public class ShootSkill : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(KeyCode.Z) && skillCd < 0) {
+	public void Execute () {
+		if (skillCd < 0) {
 			RaycastHit2D hit = Physics2D.Raycast(thrower.position, Vector2.down, 100f, layer);
 			if (hit.collider != null) {
 				GameObject go = Instantiate (skill, hit.point, skill.transform.rotation) as GameObject;
@@ -24,7 +24,15 @@ public class ShootSkill : MonoBehaviour {
 				skillCd = maxSkillCd;
 			}
 		}
-		skillCd -= Time.deltaTime;
+	}
+
+	void FixedUpdate () {
+		skillCd -= Time.fixedDeltaTime;
+	}
+
+
+	public float getCdPorcen () {
+		return (maxSkillCd - skillCd) / maxSkillCd;
 	}
 
 

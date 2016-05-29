@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: b0cfc754878b8f648bcf3bd43f944c6b
+timeCreated: 1464539879
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HUD_0
+    21300002: HUD_1
+    21300004: HUD_2
+    21300006: HUD_3
+    21300008: HUD_4
+    21300010: HUD_5
+    21300012: HUD_6
+    21300014: HUD_7
+    21300016: HUD_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HUD_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 103
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 29}
+        - {x: -29.5, y: 22}
+        - {x: -29.5, y: -29}
+        - {x: 29.5, y: -29}
+        - {x: 29.5, y: 20}
+        - {x: 18.5, y: 29}
+      - - {x: -9.5, y: -16}
+        - {x: -16.5, y: 9}
+        - {x: 6.5, y: 18}
+        - {x: 17.5, y: -3}
+    - name: HUD_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 110
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 25}
+        - {x: -25, y: 22}
+        - {x: -25, y: -15}
+        - {x: -16, y: -25}
+        - {x: 15, y: -25}
+        - {x: 25, y: -15}
+        - {x: 25, y: 17}
+        - {x: 17, y: 25}
+    - name: HUD_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 109
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 25}
+        - {x: -24.5, y: 18}
+        - {x: -24.5, y: -15}
+        - {x: -17.5, y: -24}
+        - {x: -14.5, y: -25}
+        - {x: 15.5, y: -25}
+        - {x: 24.5, y: -15}
+        - {x: 24.5, y: 23}
+        - {x: 18.5, y: 25}
+    - name: HUD_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 20}
+        - {x: -28.5, y: 4}
+        - {x: -5.5, y: -20}
+        - {x: 6.5, y: -20}
+        - {x: 28.5, y: 5}
+        - {x: 28.5, y: 20}
+    - name: HUD_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 45
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 20}
+        - {x: -29, y: 18}
+        - {x: -29, y: 7}
+        - {x: -16, y: -15}
+        - {x: -5, y: -20}
+        - {x: 11, y: -20}
+        - {x: 29, y: 5}
+        - {x: 29, y: 20}
+    - name: HUD_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 6
+        width: 7
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HUD_6
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 6
+        width: 7
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HUD_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HUD_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 5
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
