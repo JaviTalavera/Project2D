@@ -20,12 +20,16 @@ public class ShootSkill : MonoBehaviour {
 	// Update is called once per frame
 	public void Execute () {
 		if (skillCd < 0) {
-			RaycastHit2D hit = Physics2D.Raycast(thrower.position, Vector2.down, 100f, layer);
+			GameObject go = Instantiate (skill, thrower.position, skill.transform.rotation) as GameObject;
+			go.GetComponent<SkillHandle> ().speed *= Mathf.Sign(sprite.localScale.x); 
+			skillCd = maxSkillCd;
+
+			/*RaycastHit2D hit = Physics2D.Raycast(thrower.position, Vector2.down, 100f, layer);
 			if (hit.collider != null) {
 				GameObject go = Instantiate (skill, hit.point, skill.transform.rotation) as GameObject;
 				go.GetComponent<SkillHandle> ().speed *= Mathf.Sign(sprite.localScale.x); 
 				skillCd = maxSkillCd;
-			}
+			}*/
 		}
 	}
 

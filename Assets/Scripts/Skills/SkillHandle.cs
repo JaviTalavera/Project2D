@@ -3,15 +3,12 @@ using System.Collections;
 
 public class SkillHandle : MonoBehaviour {
 
-	public float speed;
-	public GameObject ice;
-	public GameObject spike;
-	public float timeBetweenSpikes;
+	public enum Element { HIELO, FUEGO }
 
-	// Use this for initialization
-	void Start () {
-		StartCoroutine ("InstantiateSprite");
-	}
+	public float speed;
+	public GameObject hitSkill;
+	public GameObject hitWater;
+	public Element elemento;
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,17 +17,24 @@ public class SkillHandle : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.gameObject.layer == LayerMask.NameToLayer ("Water")) {
-			GameObject inst = Instantiate (ice, collision.contacts [0].point, Quaternion.identity) as GameObject;
-			Destroy (gameObject);
-		}
-	}
-
-	public IEnumerator InstantiateSprite () {
-		while (true) {
-			GameObject inst = Instantiate (spike, transform.position, spike.transform.rotation) as GameObject;
-			Vector3 vFlip = new Vector3 (-1*Mathf.Sign (speed)*inst.transform.localScale.x, inst.transform.localScale.y, inst.transform.localScale.z);
-			inst.transform.localScale = vFlip;
-			yield return new WaitForSeconds (timeBetweenSpikes);
+			if (elemento == Element.HIELO) {
+				GameObject inst = Instantiate (hitWater, collision.contacts [0].point, Quaternion.identity) as GameObject;
+				Instantiate (hitSkill, collision.contacts [0].point, hitSkill.transform.rotation); 
+				Destroy (gameObject);
+			}
+		} else {
+			if (elemento == Element.FUEGO && collision.gameObject.tag == "Hielo") {
+				GameObject inst = Instantiate (hitWater, collision.contacts [0].point, Quaternion.identity) as GameObject;
+				Destroy (collision.gameObject);
+			}
+			// Soltamos los hijos para que termine la animación de las partículas y planificamos una destrucción en un 0.5 segundos.
+			Transform particulas = transform.GetChild(0).transform;
+			particulas.parent = null;
+			Destroy (particulas.gameObject, 0.5f);
+			// Instanciamos el golpe por postureo ...
+			Instantiate (hitSkill, collision.contacts [0].point, hitSkill.transform.rotation); 
+			// Y destruímos el objeto padre. Las partículas se destruirán solas
+			Destroy(gameObject);
 		}
 	}
 }
