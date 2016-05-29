@@ -590,6 +590,10 @@ Prefab:
       propertyPath: layer.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 11495726, guid: f2bee60c743cd524695611cf26642f62, type: 2}
+      propertyPath: layer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5840334, guid: f2bee60c743cd524695611cf26642f62, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f2bee60c743cd524695611cf26642f62, type: 2}

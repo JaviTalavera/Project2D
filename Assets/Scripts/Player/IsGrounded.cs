@@ -3,18 +3,15 @@ using System.Collections;
 
 public class IsGrounded : MonoBehaviour {
 
-	private bool bGrounded;
+	public LayerMask layer;
 
 	public bool isGrounded () {
-		return bGrounded;
-	}
-
-	public void LateUpdate () {
-		bGrounded = false;
-	}
-
-	public void OnTriggerStay2D(Collider2D collider) {
-		if (collider.gameObject.layer == 8)
-			bGrounded = true;
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, layer);
+		if (hit.collider != null) {
+			float distance = Mathf.Abs(hit.point.y - transform.position.y);
+			if (distance < 0.05f)
+				return true;
+		}
+		return false;
 	}
 }
