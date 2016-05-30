@@ -8,6 +8,7 @@ public class SkillHandle : MonoBehaviour {
 	public float speed;
 	public GameObject hitSkill;
 	public GameObject hitWater;
+    public GameObject hitIce;
 	public Element elemento;
 	
 	// Update is called once per frame
@@ -18,13 +19,18 @@ public class SkillHandle : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.gameObject.layer == LayerMask.NameToLayer ("Water")) {
 			if (elemento == Element.HIELO) {
-				GameObject inst = Instantiate (hitWater, collision.contacts [0].point, Quaternion.identity) as GameObject;
+				Instantiate (hitWater, collision.contacts [0].point, Quaternion.identity);
 				Instantiate (hitSkill, collision.contacts [0].point, hitSkill.transform.rotation); 
 				Destroy (gameObject);
 			}
+            else if (elemento == Element.FUEGO) {
+                Instantiate(hitWater, collision.contacts[0].point, Quaternion.identity);
+                //Instantiate(hitSkill, collision.contacts[0].point, hitSkill.transform.rotation);
+                Destroy(gameObject);
+            }
 		} else {
 			if (elemento == Element.FUEGO && collision.gameObject.tag == "Hielo") {
-				GameObject inst = Instantiate (hitWater, collision.contacts [0].point, Quaternion.identity) as GameObject;
+				Instantiate (hitWater, collision.contacts [0].point, Quaternion.identity);
 				Destroy (collision.gameObject);
 			}
 			// Soltamos los hijos para que termine la animación de las partículas y planificamos una destrucción en un 0.5 segundos.
