@@ -14,7 +14,7 @@ public class SelfDestroy : MonoBehaviour {
 	}
 
 	public IEnumerator instantiateAnimation () {
-		yield return new WaitForSeconds (timeToDie-0.1f);
+		yield return new WaitForSeconds (timeToDie-0.1f	);
 		Instantiate (animation, transform.position, animation.transform.rotation);
 	}
 }
