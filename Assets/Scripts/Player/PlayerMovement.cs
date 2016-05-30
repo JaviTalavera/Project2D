@@ -25,11 +25,13 @@ public class PlayerMovement : MonoBehaviour {
 	private KeyCode cJump;
 	private KeyCode cAttack;
 
+    private GameObject[] respawnPoints;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		direccion = DireccionH.Derecha;
-		ig = transform.FindChild ("Cuerpo/IsGrounded").GetComponent<IsGrounded> ();
+        respawnPoints = GameObject.FindGameObjectsWithTag("RespawnPoint");
+        ig = transform.FindChild ("Cuerpo/IsGrounded").GetComponent<IsGrounded> ();
 		rb = GetComponent<Rigidbody2D> ();
 		ss = GetComponent<ShootSkill> ();
 		anim = GetComponent<Animator> ();
@@ -73,9 +75,10 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetKeyDown(cAttack)) {
 			ss.Execute();
 		}
-		if (Input.GetKeyDown(KeyCode.Z)) {
-			doDamage(10f);
-		}
+        if (actualHp <= 0)
+        {
+            ResetPlayer();
+        }
 	}
 
 	void Flip () {
@@ -84,14 +87,26 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.gameObject.layer == LayerMask.NameToLayer ("Water")) { 
-			GetComponent<Collider2D> ().enabled = false;
-		}
-	}
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            doDamage(20f);
+        }
+    }
 
 	public float getHpPorcen () {
 		return actualHp / MaxHp;
 	}
+
+    public void ResetPosition  ()
+    {
+        transform.position = respawnPoints[Random.Range(0, respawnPoints.Length - 1)].transform.position;
+    }
+
+    public void ResetPlayer ()
+    {
+        actualHp = MaxHp;
+        ResetPosition();
+    }
 
 	public void doDamage (float dmg) {
 		actualHp -= dmg;
