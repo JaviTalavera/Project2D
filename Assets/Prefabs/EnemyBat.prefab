@@ -108,7 +108,7 @@ GameObject:
   - 114: {fileID: 11499936}
   - 58: {fileID: 5899332}
   - 114: {fileID: 11456314}
-  - 114: {fileID: 11456210}
+  - 114: {fileID: 11436232}
   m_Layer: 0
   m_Name: EnemyBat
   m_TagString: Untagged
@@ -295,7 +295,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11456210
+--- !u!114 &11436232
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minSpeed: 1
-  maxSpeed: 1
+  maxSpeed: 2
   minInitialOrientation: 0
   maxInitialOrientation: 0
   trail: {fileID: 0}
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c576453775af9647baa764a717f406b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VelocidadH: 1
+  VelocidadH: 2
   SentidoH: 0
   MaxRecorridoPingPong: 5
   HacerPingPong: 1
