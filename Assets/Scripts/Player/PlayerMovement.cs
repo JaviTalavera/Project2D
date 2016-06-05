@@ -9,8 +9,9 @@ public class PlayerMovement : MonoBehaviour {
 	public float MaxHp;
 	private float actualHp;
 	public float VelocidadH;
+    public float VelocidadV;
 
-	private Rigidbody2D rb;
+    private Rigidbody2D rb;
 	private IsGrounded ig;
 	private ShootSkill ss;
 	private Animator anim;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour {
 	private KeyCode cAttack;
 
     private GameObject[] respawnPoints;
+    private GameObject pmPlayerAux;
 
     // Use this for initialization
     void Start () {
@@ -37,21 +39,33 @@ public class PlayerMovement : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		sprite = transform.FindChild ("Cuerpo") as Transform;
 		actualHp = MaxHp;
-		if (player == NPlayer.Player1) {
-			GameObject inst = Instantiate (pmPlayer1, transform.position, Quaternion.identity) as GameObject;
-			inst.transform.parent = transform;
-			cJump = KeyCode.Space;
-			cAttack = KeyCode.LeftControl;
-		}
-		else if (player == NPlayer.Player2) {
-			GameObject inst = Instantiate (pmPlayer2, transform.position, Quaternion.identity) as GameObject;
-			inst.transform.parent = transform;
-			cJump = KeyCode.RightControl;
-			cAttack = KeyCode.RightShift;
-		}
+
 	}
-	
-	void Update()
+
+    void OnEnable ()
+    {
+        if (player == NPlayer.Player1)
+        {
+            pmPlayerAux = Instantiate(pmPlayer1, transform.position, Quaternion.identity) as GameObject;
+            pmPlayerAux.transform.parent = transform;
+            cJump = KeyCode.Space;
+            cAttack = KeyCode.LeftControl;
+        }
+        else if (player == NPlayer.Player2)
+        {
+            pmPlayerAux = Instantiate(pmPlayer2, transform.position, Quaternion.identity) as GameObject;
+            pmPlayerAux.transform.parent = transform;
+            cJump = KeyCode.RightControl;
+            cAttack = KeyCode.RightShift;
+        }
+    }
+
+    void OnDisable()
+    {
+        Destroy(pmPlayerAux);
+    }
+
+    void Update()
 	{
 		float x = 0;
 		if (player == NPlayer.Player1) x = Input.GetAxis ("Horizontal");
@@ -70,7 +84,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (Input.GetKeyDown (cJump)) {
 			if (ig.isGrounded()) 
-				rb.velocity = new Vector2 (rb.velocity.x, 5f);
+				rb.velocity = new Vector2 (rb.velocity.x, VelocidadV);
 		}
 		if (Input.GetKeyDown(cAttack)) {
 			ss.Execute();
@@ -86,10 +100,25 @@ public class PlayerMovement : MonoBehaviour {
 		sprite.localScale = vFlip;
 	}
 
-	void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (this.enabled)
         {
-            doDamage(20f);
+            if (collision.gameObject.tag == "Unplayer")
+            {
+                collision.gameObject.GetComponent<PlayerMovement>().player = this.player;
+                collision.gameObject.tag = gameObject.tag;
+                collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
+
+                Destroy(gameObject);
+            }
+        }
+        if (this.enabled)
+        {
+            if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                doDamage(20f);
+            }
         }
     }
 

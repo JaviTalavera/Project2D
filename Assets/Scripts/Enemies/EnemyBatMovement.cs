@@ -48,12 +48,16 @@ public class EnemyBatMovement : MonoBehaviour
             if (SentidoH == DireccionH.Izquierda)
             {
                 SentidoH = DireccionH.Derecha;
-				transform.localScale = new Vector3 (-1, 1, 1);
+                Vector3 newScale = transform.localScale;
+                newScale.x = newScale.x * -1;
+                transform.localScale = newScale;
             }
             else
             {
 				SentidoH = DireccionH.Izquierda;
-				transform.localScale = new Vector3 (1, 1, 1);
+                Vector3 newScale = transform.localScale;
+                newScale.x = newScale.x * -1;
+                transform.localScale = newScale;
             }
 
             // Actualizamos la posición horizontal de referencia para el cálculo de rebote horizontal (ping-pong)

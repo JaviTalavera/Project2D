@@ -25,12 +25,11 @@ public class SkillHandle : MonoBehaviour {
 			}
             else if (elemento == Element.FUEGO) {
                 Instantiate(hitWater, collision.contacts[0].point, Quaternion.identity);
-                //Instantiate(hitSkill, collision.contacts[0].point, hitSkill.transform.rotation);
                 Destroy(gameObject);
             }
 		} else {
 			if (elemento == Element.FUEGO && collision.gameObject.tag == "Hielo") {
-				Instantiate (hitWater, collision.contacts [0].point, Quaternion.identity);
+				Instantiate (hitIce, collision.contacts [0].point, Quaternion.identity);
 				Destroy (collision.gameObject);
 			}
 			// Soltamos los hijos para que termine la animación de las partículas y planificamos una destrucción en un 0.5 segundos.
