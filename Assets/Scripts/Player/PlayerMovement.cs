@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public GameObject pmPlayer1;
 	public GameObject pmPlayer2;
+    public GameObject lblDamage;
 
 	private KeyCode cJump;
 	private KeyCode cAttack;
@@ -30,7 +32,7 @@ public class PlayerMovement : MonoBehaviour {
     private GameObject pmPlayerAux;
 
     // Use this for initialization
-    void Start () {
+    void Awake () {
 		direccion = DireccionH.Derecha;
         respawnPoints = GameObject.FindGameObjectsWithTag("RespawnPoint");
         ig = transform.FindChild ("Cuerpo/IsGrounded").GetComponent<IsGrounded> ();
@@ -80,7 +82,10 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
 		Vector3 vSpeed = new Vector3 (VelocidadH * x, 0, 0);
-		transform.Translate(vSpeed * Time.deltaTime);
+        Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
+
+        if (viewPos.x > 0 && direccion == DireccionH.Izquierda || viewPos.x < 1 && direccion == DireccionH.Derecha)
+            transform.Translate(vSpeed * Time.deltaTime);
 
 		if (Input.GetKeyDown (cJump)) {
 			if (ig.isGrounded()) 
@@ -140,6 +145,9 @@ public class PlayerMovement : MonoBehaviour {
 	public void doDamage (float dmg) {
 		actualHp -= dmg;
 		anim.SetTrigger ("damaged");
+        GameObject inst = Instantiate(lblDamage, transform.position + new Vector3(0.5f,0,0), Quaternion.identity) as GameObject;
+        inst.GetComponent<Text>().text = dmg+"";
+        inst.transform.SetParent( pmPlayerAux.transform.Find("Canvas").transform);
 		if (actualHp < 0)
 			actualHp = 0;
 	}
