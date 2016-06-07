@@ -15,7 +15,9 @@ public class MuelleHandle : MonoBehaviour {
     {
         if (other.gameObject.tag.Contains("Player"))
         {
-            other.gameObject.GetComponent<Rigidbody2D>().AddForce(force * Vector2.up);
+            Rigidbody2D rb = other.gameObject.GetComponent<Rigidbody2D>();
+            rb.velocity = Vector2.zero;
+            rb.AddForce(force * Vector2.up);
             anim.SetTrigger("Bump");
         }
     }
