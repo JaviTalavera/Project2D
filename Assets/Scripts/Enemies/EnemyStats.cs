@@ -8,16 +8,7 @@ public class EnemyStats : MonoBehaviour {
     public Stat stat;
     public float maxHealth;
     private float health;
+    public float damage;
 
     public GameObject inst;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
