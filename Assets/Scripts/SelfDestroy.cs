@@ -17,4 +17,11 @@ public class SelfDestroy : MonoBehaviour {
 		yield return new WaitForSeconds (timeToDie-0.1f	);
 		Instantiate (anim, transform.position, anim.transform.rotation);
 	}
+
+    public void ForceDestroy ()
+    {
+        if (anim != null)
+            Instantiate(anim, transform.position, anim.transform.rotation);
+        Destroy(gameObject);
+    }
 }

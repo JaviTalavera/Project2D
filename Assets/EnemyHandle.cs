@@ -9,24 +9,23 @@ public class EnemyHandle : MonoBehaviour {
     public Transform thrower;
 
     private Animator anim;
+    private EnemyStats es;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+        es = GetComponent<EnemyStats>();
 	}
 
     public IEnumerator Attack ()
     {
         while (true)
         {
-            anim.SetTrigger("Attack");
-            GameObject go = Instantiate(projectile, thrower.position, projectile.transform.rotation) as GameObject;
-            go.GetComponent<Rigidbody2D>().AddForce(100*(Vector2.up+Vector2.right*Mathf.Sign(transform.localScale.x)));
+            if (es.stat != EnemyStats.Stat.CONGELADO) {
+                anim.SetTrigger("Attack");
+                GameObject go = Instantiate(projectile, thrower.position, projectile.transform.rotation) as GameObject;
+                go.GetComponent<Rigidbody2D>().AddForce(100 * (Vector2.up + Vector2.right * Mathf.Sign(transform.localScale.x)));
+            }
             yield return new WaitForSeconds(timeBetweenAttacks);
         }
     }
@@ -49,5 +48,29 @@ public class EnemyHandle : MonoBehaviour {
             if (nPlayers == 0)
                 StopAllCoroutines();
         }
+    }
+
+    public bool Congelar ()
+    {
+        if (es.stat != EnemyStats.Stat.CONGELADO)
+        {
+            es.stat = EnemyStats.Stat.CONGELADO;
+            anim.speed = 0;
+            return true;
+        }
+        return false;
+    }
+
+    public bool Descongelar()
+    {
+        if (es.stat == EnemyStats.Stat.CONGELADO)
+        {
+            if (es.inst != null)
+                es.inst.GetComponent<SelfDestroy>().ForceDestroy();
+            es.stat = EnemyStats.Stat.NORMAL;
+            anim.speed = 1;
+            return true;
+        }
+        return false;
     }
 }

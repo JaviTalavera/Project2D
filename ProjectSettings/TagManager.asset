@@ -8,6 +8,8 @@ TagManager:
   - Player1
   - Player2
   - Unplayer
+  - Hielo
+  - Enemy
   layers:
   - Default
   - TransparentFX
