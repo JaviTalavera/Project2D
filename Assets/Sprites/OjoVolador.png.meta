@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 15c5932fe913092479122d5889f0513e
+timeCreated: 1465943846
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cuerpo
+    21300002: AlaIzquierda1
+    21300004: AlaDer2
+    21300006: AlaDerecha1
+    21300008: AlaIzquierda2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Cuerpo
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 232
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 49.5}
+        - {x: -49, y: 28.5}
+        - {x: -49, y: -25.5}
+        - {x: -47, y: -34.5}
+        - {x: -38, y: -49.5}
+        - {x: 44, y: -49.5}
+        - {x: 49, y: -42.5}
+        - {x: 49, y: 32.5}
+        - {x: 43, y: 49.5}
+    - name: AlaIzquierda1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 199
+        width: 165
+        height: 123
+      alignment: 9
+      pivot: {x: 0.90639794, y: 0.17557482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.555664, y: 101.4043}
+        - {x: -149.55566, y: 68.4043}
+        - {x: -149.55566, y: -21.595703}
+        - {x: 11.444336, y: -21.595703}
+        - {x: 15.444336, y: -4.595703}
+        - {x: 15.444336, y: 25.404297}
+        - {x: -46.555664, y: 101.4043}
+    - name: AlaDer2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 120
+        width: 92
+        height: 90
+      alignment: 9
+      pivot: {x: 0.075200826, y: 0.8565333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.918476, y: 12.912003}
+        - {x: -6.918476, y: 7.9120026}
+        - {x: -6.918476, y: -11.087997}
+        - {x: 0.081523895, y: -38.087997}
+        - {x: 8.081524, y: -40.087997}
+        - {x: 24.081524, y: -51.087997}
+        - {x: 32.081524, y: -52.087997}
+        - {x: 34.081524, y: -69.088}
+        - {x: 41.081524, y: -71.088}
+        - {x: 52.081524, y: -56.087997}
+        - {x: 45.081524, y: -77.088}
+        - {x: 60.081524, y: -77.088}
+        - {x: 85.08153, y: -55.087997}
+        - {x: 85.08153, y: 1.9120026}
+        - {x: 12.081524, y: 12.912003}
+    - name: AlaDerecha1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 62
+        width: 143
+        height: 114
+      alignment: 9
+      pivot: {x: 0.09105677, y: 0.23805645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92.97888, y: 86.861565}
+        - {x: 72.97888, y: 86.861565}
+        - {x: -13.021118, y: 18.861565}
+        - {x: -13.021118, y: 0.86156464}
+        - {x: -6.021118, y: -17.138435}
+        - {x: 31.978882, y: -27.138435}
+        - {x: 67.97888, y: -27.138435}
+        - {x: 89.97888, y: -25.138435}
+        - {x: 122.97888, y: -18.138435}
+        - {x: 129.97888, y: -13.138435}
+        - {x: 129.97888, y: 44.861565}
+    - name: AlaIzquierda2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 4
+        width: 100
+        height: 98
+      alignment: 9
+      pivot: {x: 0.9437761, y: 0.8512627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -94.37761, y: -74.423744}
+        - {x: -78.37761, y: -83.423744}
+        - {x: -56.37761, y: -83.423744}
+        - {x: 5.6223907, y: -27.423744}
+        - {x: 5.6223907, y: 14.576256}
+        - {x: -41.37761, y: 14.576256}
+        - {x: -94.37761, y: 8.576256}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,13 +8,15 @@ public class EnemyHandle : MonoBehaviour {
     protected int nPlayers = 0;
     public Transform thrower;
 
-    protected Collider2D collider;
+    protected Collider2D cachedCollider;
+    protected Rigidbody2D rb;
     protected Animator anim;
     protected EnemyStats es;
 
 	// Use this for initialization
 	void Start () {
-        collider = GetComponent<Collider2D>();
+        cachedCollider = GetComponent<Collider2D>();
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         es = GetComponent<EnemyStats>();
 	}
@@ -25,6 +27,7 @@ public class EnemyHandle : MonoBehaviour {
         {
             es.stat = EnemyStats.Stat.CONGELADO;
             anim.speed = 0;
+            rb.gravityScale = 1;
             return true;
         }
         return false;
@@ -38,6 +41,7 @@ public class EnemyHandle : MonoBehaviour {
                 es.inst.GetComponent<SelfDestroy>().ForceDestroy();
             es.stat = EnemyStats.Stat.NORMAL;
             anim.speed = 1;
+            rb.gravityScale = 0;
             return true;
         }
         return false;
@@ -48,7 +52,7 @@ public class EnemyHandle : MonoBehaviour {
         if (other.gameObject.tag.Contains("Player"))
         {
             other.gameObject.GetComponent<PlayerMovement>().doDamage(es.damage);
-            Physics2D.IgnoreCollision(other.collider, collider);
+            Physics2D.IgnoreCollision(other.collider, cachedCollider);
             StartCoroutine("ActiveCollision", other.collider);
         }
     }
@@ -56,6 +60,6 @@ public class EnemyHandle : MonoBehaviour {
     IEnumerator ActiveCollision (Collider2D other)
     {
         yield return new WaitForSeconds(2f);
-        Physics2D.IgnoreCollision(other, collider, false);
+        Physics2D.IgnoreCollision(other, cachedCollider, false);
     }
 }
