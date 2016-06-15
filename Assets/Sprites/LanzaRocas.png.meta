@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: 57769b18103c9714085abe39d0c8abd9
+timeCreated: 1465504278
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cuerpo
+    21300002: Roca
+    21300004: Boca
+    21300006: Pie
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Cuerpo
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 121
+        width: 127
+        height: 270
+      alignment: 9
+      pivot: {x: 0.43495086, y: 0.08963736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 67.761246, y: 201.79791}
+        - {x: 39.761242, y: 245.79791}
+        - {x: -19.238758, y: 245.79791}
+        - {x: -48.238758, y: 223.79791}
+        - {x: -55.238758, y: 194.79791}
+        - {x: -55.238758, y: -12.202087}
+        - {x: -47.238758, y: -24.202087}
+        - {x: -7.238758, y: -24.202087}
+        - {x: 43.761242, y: -3.2020874}
+        - {x: 63.761242, y: 48.797913}
+        - {x: 71.761246, y: 90.79791}
+        - {x: 71.761246, y: 172.79791}
+    - name: Roca
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 142
+        width: 93
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.5, y: 31}
+        - {x: -46.5, y: 21}
+        - {x: -46.5, y: -32}
+        - {x: -28.5, y: -53}
+        - {x: 36.5, y: -53}
+        - {x: 46.5, y: -47}
+        - {x: 46.5, y: 12}
+        - {x: 41.5, y: 42}
+        - {x: 20.5, y: 53}
+        - {x: -14.5, y: 53}
+    - name: Boca
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 174
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 51.5}
+        - {x: -87, y: 26.5}
+        - {x: -87, y: -25.5}
+        - {x: -38, y: -51.5}
+        - {x: 48, y: -51.5}
+        - {x: 87, y: -10.5}
+        - {x: 87, y: 51.5}
+    - name: Pie
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 6
+        width: 36
+        height: 103
+      alignment: 9
+      pivot: {x: 0.56749344, y: 0.783081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.429764, y: 22.342659}
+        - {x: -20.429764, y: -12.657341}
+        - {x: -20.429764, y: -77.65734}
+        - {x: -14.429764, y: -80.65734}
+        - {x: 14.570236, y: -80.65734}
+        - {x: 15.570236, y: -76.65734}
+        - {x: 15.570236, y: 0.342659}
+        - {x: 6.570236, y: 22.342659}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
