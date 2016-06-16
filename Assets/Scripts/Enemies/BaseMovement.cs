@@ -7,12 +7,15 @@ public abstract class BaseMovement: MonoBehaviour
     protected Vector3 direction;
     protected Transform mTransform;
     protected Transform cachedTransform { get { if (!mTransform) mTransform = transform; return mTransform; } }
+    protected EnemyStats es;
 
     protected virtual void Move()
     {
-        velocity.y = GetY();
-        cachedTransform.localPosition += (velocity + direction) * Time.deltaTime * speed;
-        ReactToEdges();
+        if (gameObject.tag == "Enemy" && es.stat != EnemyStats.Stat.CONGELADO) {
+            velocity.y = GetY();
+            cachedTransform.localPosition += (velocity + direction) * Time.deltaTime * speed;
+            ReactToEdges();
+        }
     }
 
     protected virtual void ReactToEdges()
@@ -31,6 +34,8 @@ public abstract class BaseMovement: MonoBehaviour
 
     protected virtual void Start()
     {
+        if (gameObject.tag == "Enemy")
+            es = GetComponent<EnemyStats>();
         InitDirection();
     }
 

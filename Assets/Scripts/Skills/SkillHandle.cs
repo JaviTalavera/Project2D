@@ -38,6 +38,7 @@ public class SkillHandle : MonoBehaviour {
                     GameObject inst = Instantiate(hitWater, collision.gameObject.transform.position, Quaternion.identity) as GameObject;
                     // Deshabilitamos el collider para que solo se quede el hielo y podamos derretirlo
                     collision.gameObject.GetComponent<EnemyStats>().inst = inst;
+                    inst.transform.parent = collision.transform;
                     inst.GetComponent<Collider2D>().enabled = false;
                 }
             }

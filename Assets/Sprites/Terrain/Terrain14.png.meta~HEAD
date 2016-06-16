@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 4ef1609cd2273874c842796b4607b51c
-timeCreated: 1463935461
+guid: 099e9e6f2ad2c4f378cefbeb9c55c6e1
+timeCreated: 1465762205
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: IceSpike2
-    21300002: IceSpike1
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,7 +30,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -40,7 +38,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,36 +49,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: IceSpike2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 35
-        width: 73
-        height: 58
-      alignment: 9
-      pivot: {x: 0.26091245, y: 0.027694177}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 45.953392, y: 56.393738}
-        - {x: -19.046608, y: 5.393738}
-        - {x: -19.046608, y: -1.6062622}
-        - {x: 21.953392, y: -1.6062622}
-        - {x: 30.953392, y: 10.393738}
-        - {x: 53.953392, y: 48.393738}
-        - {x: 53.953392, y: 56.393738}
-    - name: IceSpike1
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 0
-        width: 21
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5055041, y: 0.078113064}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
