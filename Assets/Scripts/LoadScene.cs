@@ -13,6 +13,8 @@ public class LoadScene : MonoBehaviour {
     public GameObject Next;
     public int page;
 
+
+
     public void LoadSceneNumber(int level)
     {
         SceneManager.LoadScene(level);
@@ -76,15 +78,20 @@ public class LoadScene : MonoBehaviour {
 
     void Start()
     {
-        switch (SceneManager.GetActiveScene().name)
-        {
-            case "HighScores": 
-                LoadBestTimes(1);
-                break;
-            case "Menu":
-                LoadMainMenu();
-                break;
-        }
+        /* switch (SceneManager.GetActiveScene().name)
+         {
+             case "HighScores": 
+                 LoadBestTimes(1);
+                 break;
+             case "Menu":
+                 LoadMainMenu();
+                 break;
+         }*/
+    }
+
+    public void startGame ()
+    {
+        
     }
 
     public void NextHighScoresPage()

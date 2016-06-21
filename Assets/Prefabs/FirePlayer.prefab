@@ -156,8 +156,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.403268, y: 0.19941847, z: 0}
+  m_LocalPosition: {x: 0.403268, y: 0.97, z: 0}
   m_LocalScale: {x: 2.215762, y: 2.215762, z: 2.215762}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 480308}
   m_RootOrder: 6
@@ -170,6 +171,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -0.11815091, w: 0.9929957}
   m_LocalPosition: {x: 0.485, y: 0.106, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 480308}
   m_RootOrder: 2
@@ -182,6 +184,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.0994512, w: 0.9950425}
   m_LocalPosition: {x: -0.369, y: 0.151, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 480308}
   m_RootOrder: 3
@@ -194,6 +197,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.045, y: 0.351, z: 0}
   m_LocalScale: {x: 1.0492592, y: 1.0492592, z: 1.0492592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 480308}
   m_RootOrder: 4
@@ -204,8 +208,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.6, y: 2.96, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 480308}
   m_Father: {fileID: 0}
@@ -219,6 +224,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.028804906, y: -0.7400647, z: 0}
   m_LocalScale: {x: 2.215762, y: 2.215762, z: 2.215762}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 480308}
   m_RootOrder: 5
@@ -231,6 +237,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: 0.07223113, w: -0.997388}
   m_LocalPosition: {x: 0.005, y: -0.098, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 480308}
   m_RootOrder: 1
@@ -243,6 +250,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.013, y: 0.108, z: 0}
   m_LocalScale: {x: 0.45131204, y: 0.45131204, z: 0.45131204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 483648}
   - {fileID: 468954}
@@ -262,6 +270,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.054, y: 0.552, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 480308}
   m_RootOrder: 0
@@ -276,12 +285,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!61 &6103920
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -338,11 +347,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ac343563ceb9640be80d32ddeadd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHp: 100
+  MaxHp: 1000
   VelocidadH: 3
-  player: 1
+  VelocidadV: 6
   pmPlayer1: {fileID: 183548, guid: 29ef81e4dfcea764cbbbf3fb378e7f1a, type: 2}
   pmPlayer2: {fileID: 184354, guid: 1ed17053bae6801409b70b553b1eaef2, type: 2}
+  lblDamage: {fileID: 147832, guid: a73ec7155c9819b449979b39e972d230, type: 2}
+  cJump: 305
+  cAttack: 13
+  xAxis: Horizontal2
+  pmPlayerAux: {fileID: 0}
 --- !u!114 &11480790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -366,9 +380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea2b12a3745754743901030bfc4dffc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill: {fileID: 137368, guid: 73eeb2e1e6503c348ba17bb94d3cb7c5, type: 2}
-  maxSkillCd: 3
-  thrower: {fileID: 407624}
+  skill: {fileID: 165536, guid: 1331a25d9de8ae4489987800748a8374, type: 2}
+  maxSkillCd: 1
   layer:
     serializedVersion: 2
     m_Bits: 256

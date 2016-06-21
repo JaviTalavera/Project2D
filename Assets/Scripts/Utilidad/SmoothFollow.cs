@@ -21,7 +21,19 @@ public class SmoothFollow : MonoBehaviour
     {
         if (targets.Length > 0)
         {
-            Vector3 midPoint = (targets[0].position + targets[1].position)/2 + Offset*Vector3.up;
+            Vector3 midPoint;
+            if (targets[0] == null)
+            {
+                midPoint = targets[1].position + Offset * Vector3.up;
+            }
+            else if (targets[1] == null)
+            {
+                midPoint = targets[0].position + Offset * Vector3.up;
+            }
+            else
+            {
+                midPoint = (targets[0].position + targets[1].position) / 2 + Offset * Vector3.up;
+            }
 
             Vector3 point = Camera.main.WorldToViewportPoint(midPoint);
             Vector3 delta = midPoint - GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));

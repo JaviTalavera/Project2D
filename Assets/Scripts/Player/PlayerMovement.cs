@@ -5,7 +5,6 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
 	public enum DireccionH { Izquierda, Derecha }
-	public enum NPlayer { Player1, Player2 }
 
 	public float MaxHp;
 	private float actualHp;
@@ -17,19 +16,19 @@ public class PlayerMovement : MonoBehaviour {
 	private ShootSkill ss;
 	private Animator anim;
 	private Transform sprite;
-
-	public NPlayer player;
+    
 	private DireccionH direccion;
 
 	public GameObject pmPlayer1;
 	public GameObject pmPlayer2;
     public GameObject lblDamage;
 
-	private KeyCode cJump;
-	private KeyCode cAttack;
+	public KeyCode cJump;
+	public KeyCode cAttack;
+    public string xAxis;
 
     private GameObject[] respawnPoints;
-    private GameObject pmPlayerAux;
+    public GameObject pmPlayerAux;
 
     // Use this for initialization
     void Awake () {
@@ -46,12 +45,13 @@ public class PlayerMovement : MonoBehaviour {
 
     void OnEnable ()
     {
-        if (player == NPlayer.Player1)
+        /*if (player == NPlayer.Player1)
         {
             pmPlayerAux = Instantiate(pmPlayer1, transform.position, Quaternion.identity) as GameObject;
             pmPlayerAux.transform.parent = transform;
             cJump = KeyCode.Space;
             cAttack = KeyCode.LeftControl;
+            xAxis = "Horizontal";
         }
         else if (player == NPlayer.Player2)
         {
@@ -59,7 +59,8 @@ public class PlayerMovement : MonoBehaviour {
             pmPlayerAux.transform.parent = transform;
             cJump = KeyCode.RightControl;
             cAttack = KeyCode.RightShift;
-        }
+            xAxis = "Horizontal2";
+        }*/
     }
 
     void OnDisable()
@@ -70,8 +71,9 @@ public class PlayerMovement : MonoBehaviour {
     void Update()
 	{
 		float x = 0;
-		if (player == NPlayer.Player1) x = Input.GetAxis ("Horizontal");
-		else x = Input.GetAxis ("Horizontal2");
+        //if (player == NPlayer.Player1) x = Input.GetAxis ("Horizontal");
+        //else x = Input.GetAxis ("Horizontal2");
+        x = Input.GetAxis(xAxis);
 
 		if (direccion == DireccionH.Derecha && x < 0) {
 			direccion = DireccionH.Izquierda;
@@ -111,9 +113,9 @@ public class PlayerMovement : MonoBehaviour {
         {
             if (collision.gameObject.tag == "Unplayer")
             {
-                collision.gameObject.GetComponent<PlayerMovement>().player = this.player;
-                collision.gameObject.tag = gameObject.tag;
-                collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
+                //collision.gameObject.GetComponent<PlayerMovement>().player = this.player;
+                //collision.gameObject.tag = gameObject.tag;
+                //collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
 
                 Destroy(gameObject);
             }
