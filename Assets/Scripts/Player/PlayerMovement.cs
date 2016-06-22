@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour {
                 //collision.gameObject.tag = gameObject.tag;
                 //collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
 
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
         }
         if (this.enabled)
