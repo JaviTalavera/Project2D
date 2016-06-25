@@ -3293,10 +3293,13 @@ MonoBehaviour:
   MaxHp: 100
   VelocidadH: 3
   VelocidadV: 0
-  player: 1
   pmPlayer1: {fileID: 183548, guid: 29ef81e4dfcea764cbbbf3fb378e7f1a, type: 2}
   pmPlayer2: {fileID: 184354, guid: 1ed17053bae6801409b70b553b1eaef2, type: 2}
   lblDamage: {fileID: 147832, guid: a73ec7155c9819b449979b39e972d230, type: 2}
+  cJump: 0
+  cAttack: 0
+  xAxis: 
+  pmPlayerAux: {fileID: 0}
 --- !u!50 &1762312727
 Rigidbody2D:
   serializedVersion: 2
@@ -3665,8 +3668,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1853296635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.04, y: 0.18, z: 0}
+  m_LocalScale: {x: 0.20556977, y: 0.21437436, z: 1}
   m_Children: []
   m_Father: {fileID: 1669016409}
   m_RootOrder: 0
@@ -3696,7 +3699,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 57769b18103c9714085abe39d0c8abd9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 684d80663ae89490d87c2f059ae7df67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
