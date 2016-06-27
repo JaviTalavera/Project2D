@@ -5,6 +5,7 @@ public class RockHandle : MonoBehaviour {
 
     private Rigidbody2D rb;
     public float force;
+    public GameObject explosion;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,7 @@ public class RockHandle : MonoBehaviour {
         else if (other.gameObject.tag.Contains("Player"))
         {
             other.gameObject.GetComponent<PlayerMovement>().doDamage(50f);
+            Instantiate(explosion, other.contacts[0].point, explosion.transform.rotation);
             Destroy(gameObject);
         }
     }

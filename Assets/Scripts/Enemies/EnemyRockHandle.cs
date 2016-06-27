@@ -8,7 +8,7 @@ public class EnemyRockHandle : EnemyHandle {
         if (other.tag.Contains("Player"))
         {
             if (nPlayers == 0)
-                StartCoroutine("Attack");
+                attack = true;
             nPlayers++;
         }
     }
@@ -19,21 +19,17 @@ public class EnemyRockHandle : EnemyHandle {
         {
             nPlayers--;
             if (nPlayers == 0)
-                StopAllCoroutines();
+                attack = false;
         }
     }
 
-    public IEnumerator Attack()
+    public override void Attack()
     {
-        while (true)
+        if (es.stat != EnemyStats.Stat.CONGELADO)
         {
-            if (es.stat != EnemyStats.Stat.CONGELADO)
-            {
-                anim.SetTrigger("Attack");
-                GameObject go = Instantiate(projectile, thrower.position, projectile.transform.rotation) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(100 * (Vector2.up + Vector2.right * Mathf.Sign(transform.localScale.x)));
-            }
-            yield return new WaitForSeconds(timeBetweenAttacks);
+            anim.SetTrigger("Attack");
+            GameObject go = Instantiate(projectile, thrower.position, projectile.transform.rotation) as GameObject;
+            go.GetComponent<Rigidbody2D>().AddForce(100 * (Vector2.up + Vector2.right * Mathf.Sign(transform.localScale.x)));
         }
     }
 }

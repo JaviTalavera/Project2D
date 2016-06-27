@@ -3,10 +3,13 @@ using System.Collections;
 
 public class EnemyHandle : MonoBehaviour {
 
-    public float timeBetweenAttacks = 3f;
-    public GameObject projectile;
     protected int nPlayers = 0;
     public Transform thrower;
+
+    public bool attack;
+    public GameObject projectile;
+    public float timeBetweenAttacks = 3f;
+    private float maxTimeBetweenAttacks;
 
     protected Collider2D cachedCollider;
     protected Rigidbody2D rb;
@@ -19,7 +22,32 @@ public class EnemyHandle : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         es = GetComponent<EnemyStats>();
-	}
+        maxTimeBetweenAttacks = timeBetweenAttacks;
+
+    }
+
+    void Update ()
+    {
+        if (attack)
+        {
+            if (timeBetweenAttacks < 0)
+            {
+                Attack();
+                timeBetweenAttacks = maxTimeBetweenAttacks;
+            }
+            timeBetweenAttacks -= Time.deltaTime;
+        }
+    }
+
+    public virtual void Attack()
+    {
+        if (es.stat != EnemyStats.Stat.CONGELADO)
+        {
+            //anim.SetTrigger("Attack");
+            GameObject go = Instantiate(projectile, thrower.position, projectile.transform.rotation) as GameObject;
+            //go.GetComponent<Rigidbody2D>().AddForce(100 * (Vector2.up + Vector2.right * Mathf.Sign(transform.localScale.x)));
+        }
+    }
 
     public bool Congelar ()
     {
